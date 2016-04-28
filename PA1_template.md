@@ -71,8 +71,9 @@ with(steps,{
         barplot(height=x, names.arg=date, xlab="Date", 
                 ylim=c(0,25000), ylab="Number of Steps", panel.first=grid())
 })
-# Construct the mean and median lines. The red line with dashes 
-# is the mean and the solid green line is the median.
+```
+ Construct the mean and median lines. The red line with dashes is the mean and the solid green line is the median.
+```r
 abline(h=mean(steps$x,na.rm=TRUE), col="red", lwd=3, lty=2)
 abline(h=mean(steps$x,na.rm=TRUE), col="green", lwd=1)
 ```
@@ -110,7 +111,7 @@ with(intervals_steps,{
 })
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png)
+![](instructions_fig/unnamed-chunk-8-1.png)
 
 ####2. max steps
 
@@ -178,14 +179,14 @@ with(new_steps,{
         barplot(height=x, names.arg=date, xlab="Date", 
                 ylim=c(0,25000), ylab="Number of Steps", panel.first=grid())
 })
-
-# Construct the mean and median lines. The red line with dashes 
-# is the mean and the solid green line is the median.
+```
+Construct the mean and median lines. The red line with dashes is the mean and the solid green line is the median.
+```r
 abline(h=mean(steps$x,na.rm=TRUE), col="red", lwd=3, lty=2)
 abline(h=mean(steps$x,na.rm=TRUE), col="green", lwd=1)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)
+![](instructions_fig/unnamed-chunk-12-1.png)
 Conclusion: almost no change in the mean and median from replacing the NA's
 
 ##Part 4
@@ -238,7 +239,7 @@ for( td in day_of_week ) {
 }
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)
+![](instructions_fig/unnamed-chunk-15-1.png)
 
 ```r
 mtext( "interval (5-minute)", side=1, outer=TRUE, col="blue", font=1 )  
@@ -248,6 +249,6 @@ mtext( "Activity patterns between weekdays and weekends", side=3, outer=TRUE,
 box("outer", col="maroon") 
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-15-2.png)
+![](instructions_fig/unnamed-chunk-15-2.png)
 
 
