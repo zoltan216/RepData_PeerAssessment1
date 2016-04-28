@@ -77,7 +77,7 @@ abline(h=mean(steps$x,na.rm=TRUE), col="red", lwd=3, lty=2)
 abline(h=mean(steps$x,na.rm=TRUE), col="green", lwd=1)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)
+![](RepData_PeerAssessment1/instructions_fig/unnamed-chunk-5-1.png)
 
 ####3. Calculate the mean and median
 
